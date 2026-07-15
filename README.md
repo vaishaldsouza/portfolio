@@ -4,17 +4,15 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-A retro Windows 95-themed developer portfolio for **Vaishal Dsouza**, CSE Student & Full-Stack Developer.
-
 ![Desktop Screenshot](public/screenshots/desktop.png)
 
 ---
 
 ## 📸 Screenshots
 
-| Boot Screen | Login | Desktop |
-|---|---|---|
-| ![Boot](public/screenshots/boot.png) | ![Login](public/screenshots/login.png) | ![Desktop](public/screenshots/desktop.png) |
+| Boot Screen | Desktop |
+|---|---|
+| ![Boot](public/screenshots/boot.png) | ![Desktop](public/screenshots/desktop.png) |
 
 | Projects | Chess | Meme Vault |
 |---|---|---|
