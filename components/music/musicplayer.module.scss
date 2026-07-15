@@ -1,0 +1,109 @@
+.window {
+  position: absolute; display: flex; flex-direction: column;
+  z-index: 100; background: #c0c0c0; width: 22rem;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    1px 1px 0px 0px #c1c1c1 inset, -1px -1px 0px 0px #000 inset;
+  padding: 0.25rem;
+}
+.titlebar {
+  display: flex; height: 1.5rem; padding: 0 0.25rem 0 0.5rem;
+  justify-content: space-between; align-items: center;
+  background: #000080; cursor: grab; color: white;
+  font-weight: bold; font-size: 0.9rem; margin-bottom: 1px;
+  &:active { cursor: grabbing; }
+}
+.titleLeft { display: flex; align-items: center; gap: 0.4rem; }
+.buttons { display: flex; gap: 0.1rem; }
+.btn {
+  border: none; width: 1.1rem; height: 1rem; display: flex;
+  align-items: center; justify-content: center;
+  background: #c0c0c0; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.btnIcon { width: 0.8rem; height: 0.7rem; }
+
+.menubar {
+  display: flex; gap: 0; background: #c0c0c0;
+  border-bottom: 1px solid #808080; padding: 1px 4px;
+}
+.menuItem {
+  padding: 2px 8px; font-size: 0.75rem; cursor: pointer;
+  &:hover { background: #000080; color: white; }
+}
+
+/* Visualizer */
+.visualizer {
+  display: flex; align-items: flex-end; gap: 2px;
+  background: #000020; height: 5rem; padding: 4px;
+  margin: 4px; border: 2px solid #000;
+  box-shadow: 2px 2px 0px 0px #000 inset;
+}
+.bar {
+  flex: 1; background: #004080; border-radius: 1px;
+  transition: height 0.15s ease;
+  animation: pulse 0.3s infinite alternate;
+}
+@keyframes pulse {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
+
+/* Track info */
+.trackInfo {
+  padding: 4px 8px; border-bottom: 1px solid #808080;
+  background: #000040; color: white; margin: 0 4px;
+}
+.trackName { font-size: 0.85rem; font-weight: bold; }
+.trackMeta { font-size: 0.7rem; color: #8888ff; margin-top: 2px; }
+
+/* Progress */
+.progressBar {
+  height: 6px; background: #808080; margin: 4px;
+  box-shadow: 2px 2px 0px 0px #000 inset;
+}
+.progressFill { height: 100%; background: #000080; transition: width 0.1s; }
+
+/* Controls */
+.controls {
+  display: flex; justify-content: center; gap: 4px;
+  padding: 6px 4px;
+}
+.ctrlBtn {
+  background: #c0c0c0; border: none; font-size: 1rem;
+  width: 2.2rem; height: 2rem; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.playBtn { width: 3rem; background: #000080; color: white; font-size: 1.1rem; }
+
+/* Volume */
+.volumeRow {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 8px; font-size: 0.8rem;
+}
+.volLabel { font-size: 0.9rem; }
+.volumeSlider { flex: 1; height: 4px; accent-color: #000080; cursor: pointer; }
+.volValue { font-size: 0.7rem; width: 2rem; text-align: right; }
+
+/* Playlist */
+.playlist {
+  margin: 4px; border: 2px solid #808080;
+  box-shadow: 2px 2px 0px 0px #000 inset;
+  max-height: 7rem; overflow-y: auto;
+  background: white;
+}
+.playlistItem {
+  display: flex; gap: 0.5rem; padding: 3px 6px;
+  font-size: 0.75rem; cursor: pointer; align-items: center;
+  &:hover { background: #000080; color: white; }
+}
+.activeTrack { background: #000080 !important; color: white !important; }
+.trackBpm { margin-left: auto; color: inherit; opacity: 0.7; font-size: 0.7rem; }
+
+.statusbar {
+  display: flex; justify-content: space-between;
+  padding: 2px 6px; font-size: 0.7rem;
+  border-top: 1px solid #808080;
+}

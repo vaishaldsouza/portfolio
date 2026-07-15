@@ -1,0 +1,137 @@
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background: #c0c0c0;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    1px 1px 0px 0px #c1c1c1 inset, -1px -1px 0px 0px #000 inset;
+  padding: 0.25rem;
+  width: fit-content;
+}
+.titlebar {
+  display: flex; height: 1.5rem; padding: 0 0.25rem 0 0.5rem;
+  justify-content: space-between; align-items: center;
+  background: #000080; cursor: grab; color: white;
+  font-weight: bold; font-size: 0.9rem; margin-bottom: 1px;
+}
+.titlebar:active { cursor: grabbing; }
+.titleLeft { display: flex; align-items: center; gap: 0.3rem; }
+.buttons { display: flex; gap: 0.1rem; }
+.btn {
+  border: none; width: 1.1rem; height: 1rem; display: flex;
+  align-items: center; justify-content: center; background: #c0c0c0; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.btnIcon { width: 0.8rem; height: 0.7rem; }
+
+/* Menu bar */
+.menubar {
+  display: flex; background: #c0c0c0;
+  border-bottom: 1px solid #808080; padding: 0 4px;
+  font-size: 0.75rem;
+}
+.menuGroup {
+  position: relative;
+  &:hover .dropdown { display: flex; }
+}
+.menuItem {
+  padding: 2px 6px; cursor: pointer;
+  &:hover { background: #000080; color: white; }
+}
+.dropdown {
+  display: none; position: absolute; top: 100%; left: 0;
+  background: #c0c0c0; z-index: 999; min-width: 8rem;
+  flex-direction: column;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    -1px -1px 0px 0px #000 inset;
+}
+.dropItem {
+  padding: 3px 16px; font-size: 0.75rem; cursor: pointer;
+  &:hover { background: #000080; color: white; }
+}
+.dropDivider { height: 1px; background: #808080; margin: 2px 0; }
+
+/* Body */
+.body { display: flex; flex: 1; min-height: 0; }
+
+/* Toolbar */
+.toolbar {
+  background: #c0c0c0; padding: 4px;
+  border-right: 1px solid #808080;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.toolGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
+.toolBtn {
+  width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;
+  background: #c0c0c0; border: none; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+  &:hover { background: #d0d0d0; }
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.toolActive {
+  box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset,
+    1px 1px 0px 0px #808080 inset !important;
+  background: #d0d0d0 !important;
+}
+.toolShape { display: flex; align-items: center; justify-content: center; }
+.toolSection {
+  display: flex; flex-direction: column; gap: 2px;
+  border-top: 1px solid #808080; padding-top: 4px;
+}
+.fillBtn {
+  width: 100%; height: 1.4rem; display: flex; align-items: center; justify-content: center;
+  background: #c0c0c0; border: none; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+
+/* Canvas area */
+.canvasArea {
+  flex: 1; background: #808080; padding: 8px; overflow: auto;
+  min-width: 400px; min-height: 300px;
+}
+.canvasWrapper { position: relative; display: inline-block; }
+.canvas {
+  background: white; display: block; cursor: crosshair;
+  box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset;
+}
+.textOverlay {
+  position: absolute; background: transparent; border: 1px dashed #000;
+  outline: none; font-size: 16px; min-width: 80px; min-height: 30px; resize: both;
+}
+
+/* Palette */
+.palette {
+  display: flex; align-items: center; gap: 4px;
+  background: #c0c0c0; border-top: 1px solid #808080; padding: 4px;
+}
+.currentColors { position: relative; width: 2.5rem; height: 2rem; flex-shrink: 0; }
+.fgColor {
+  position: absolute; top: 0; left: 0; width: 1.5rem; height: 1.5rem;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #808080 inset;
+}
+.bgColor {
+  position: absolute; bottom: 0; right: 0; width: 1.5rem; height: 1.5rem;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #808080 inset;
+}
+.colorGrid {
+  display: grid; grid-template-columns: repeat(16, 1.5rem);
+  gap: 1px;
+}
+.colorSwatch {
+  width: 1.5rem; height: 0.875rem; border: none; cursor: pointer;
+  box-shadow: 1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #808080 inset;
+  &:hover { outline: 1px solid #000; }
+}
+
+/* Status */
+.statusbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #c0c0c0; border-top: 1px solid #808080;
+  padding: 2px 6px; font-size: 0.7rem;
+}

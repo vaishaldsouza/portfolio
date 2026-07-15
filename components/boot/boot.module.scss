@@ -1,0 +1,55 @@
+.screen {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background: #000; z-index: 99999;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* DOS text phase */
+.textPhase {
+  width: 100%; height: 100%; padding: 1rem;
+  display: flex; flex-direction: column; justify-content: flex-start;
+}
+.dosText { font-family: "Courier New", monospace; font-size: 0.85rem; }
+.dosLine { color: #c0c0c0; line-height: 1.6; }
+.cursor {
+  color: #c0c0c0; animation: blink 0.7s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* Windows logo phase */
+.barPhase {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 3rem;
+}
+.win95logo {
+  display: flex; align-items: center; gap: 1.5rem;
+}
+.logoFlag {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 3px; width: 4rem; height: 4rem;
+}
+.flagRed    { background: #f25022; border-radius: 1px; }
+.flagGreen  { background: #7fba00; border-radius: 1px; }
+.flagBlue   { background: #00a4ef; border-radius: 1px; }
+.flagYellow { background: #ffb900; border-radius: 1px; }
+
+.logoText {
+  display: flex; flex-direction: column; gap: 0;
+}
+.logoWindows { color: #c0c0c0; font-size: 0.9rem; letter-spacing: 2px; }
+.logoWin { color: #fff; font-size: 2.5rem; font-weight: bold; line-height: 1; }
+.logo95 { color: #fff; font-size: 2.5rem; font-weight: bold; line-height: 1; }
+
+.progressContainer {
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+}
+.progressLabel { color: #c0c0c0; font-size: 0.8rem; font-family: "Courier New", monospace; }
+.progressBar {
+  width: 20rem; height: 1.2rem; background: #000;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #404040 inset;
+}
+.progressFill {
+  height: 100%; background: #000080;
+  transition: width 0.03s linear;
+}

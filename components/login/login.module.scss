@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: #008282; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+}
+.dialog {
+  background: #c0c0c0;
+  box-shadow: 4px 4px 0px 0px #b1b1b1 inset, -4px -4px 0px 0px #7e7e7e inset,
+    2px 2px 0px 0px #f0f0f0 inset, -2px -2px 0px 0px #262626 inset;
+  width: 28rem; display: flex; flex-direction: column;
+}
+.shake {
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-8px)} 40%,80%{transform:translateX(8px)}
+}
+.titlebar {
+  background: #000080; padding: 0.3rem 0.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.titleLeft {
+  display: flex; align-items: center; gap: 0.4rem;
+  color: white; font-weight: bold; font-size: 1rem;
+}
+.body { padding: 1.5rem 1.5rem 1rem; }
+.iconRow { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; }
+.userIcon { font-size: 3rem; }
+.welcomeText { font-size: 1.1rem; font-weight: bold; }
+.subText { font-size: 0.85rem; margin-top: 0.2rem; color: #333; }
+.formRow { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.7rem; }
+.label { font-size: 0.9rem; width: 6rem; text-align: right; flex-shrink: 0; }
+.input {
+  flex: 1; padding: 0.2rem 0.3rem; font-family: inherit; font-size: 0.9rem;
+  box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset;
+  border: none; background: white; outline: none;
+}
+.hint { font-size: 0.8rem; color: #800000; margin-top: 0.4rem; text-align: center; }
+.footer {
+  display: flex; justify-content: center; gap: 0.5rem;
+  padding: 0.8rem; border-top: 1px solid #808080;
+}
+.btn {
+  background: #c0c0c0; border: none; font-family: inherit;
+  font-size: 0.9rem; padding: 0.3rem 1.2rem; cursor: pointer; min-width: 5rem;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+  &:active {
+    box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset,
+      1px 1px 0px 0px #808080 inset, -1px -1px 0px 0px #fff inset;
+  }
+}

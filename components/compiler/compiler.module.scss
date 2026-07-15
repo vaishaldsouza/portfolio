@@ -1,0 +1,91 @@
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background: #c0c0c0;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    1px 1px 0px 0px #c1c1c1 inset, -1px -1px 0px 0px #000 inset;
+  padding: 0.25rem;
+  width: 70rem;
+  height: 40rem;
+}
+.titlebar {
+  display: flex; height: 1.5rem; padding: 0 0.25rem 0 0.5rem;
+  justify-content: space-between; align-items: center;
+  background: #000080; cursor: grab; color: white;
+  font-weight: bold; font-size: 0.9rem; margin-bottom: 1px;
+  &:active { cursor: grabbing; }
+}
+.titleLeft { display: flex; align-items: center; gap: 0.4rem; }
+.buttons { display: flex; gap: 0.1rem; }
+.btn {
+  border: none; width: 1.1rem; height: 1rem; display: flex;
+  align-items: center; justify-content: center; background: #c0c0c0; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.btnIcon { width: 0.8rem; height: 0.7rem; }
+
+.toolbar {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0.3rem 0.4rem; border-bottom: 1px solid #808080;
+  flex-wrap: wrap;
+}
+.toolBtn {
+  background: #c0c0c0; border: none; font-family: inherit;
+  font-size: 0.75rem; padding: 0.2rem 0.6rem; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset,
+    1px 1px 0px 0px #fff inset, -1px -1px 0px 0px #000 inset;
+  &:active {
+    box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset;
+  }
+  &:disabled { opacity: 0.5; cursor: not-allowed; }
+}
+.statusMsg { font-size: 0.75rem; color: #000080; font-weight: bold; margin-left: auto; }
+
+.body {
+  display: flex; flex: 1; min-height: 0; gap: 2px; padding: 2px;
+}
+
+.editorPane {
+  display: flex; flex: 1; flex-direction: column; min-width: 0;
+  border: 1px solid #808080;
+}
+.outputPane {
+  display: flex; flex-direction: column; width: 35%;
+  border: 1px solid #808080;
+}
+.paneTitle {
+  background: #000080; color: white; font-size: 0.75rem;
+  padding: 2px 6px; font-weight: bold;
+}
+.lineNumbers {
+  position: absolute;
+  background: #e0e0e0; border-right: 1px solid #808080;
+  padding: 4px 4px; text-align: right; font-size: 0.7rem;
+  color: #808080; font-family: monospace; line-height: 1.4rem;
+  user-select: none; width: 2rem; top: 1.2rem; bottom: 0;
+  overflow: hidden;
+}
+.editorPane { position: relative; }
+.editor {
+  flex: 1; resize: none; border: none; outline: none;
+  font-family: "Courier New", monospace; font-size: 0.8rem;
+  line-height: 1.4rem; padding: 4px 4px 4px 2.5rem;
+  background: #1e1e1e; color: #d4d4d4;
+  box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset;
+  tab-size: 4; white-space: pre; overflow: auto;
+}
+.output {
+  flex: 1; margin: 0; padding: 6px 8px; overflow: auto;
+  font-family: "Courier New", monospace; font-size: 0.75rem;
+  background: #000; color: #00ff00; line-height: 1.4;
+  white-space: pre-wrap; word-break: break-word;
+}
+
+.statusbar {
+  display: flex; justify-content: space-between;
+  padding: 2px 6px; font-size: 0.7rem;
+  border-top: 1px solid #808080; background: #c0c0c0;
+}

@@ -1,0 +1,64 @@
+.window {
+  position: absolute; display: flex; flex-direction: column;
+  z-index: 100; background: #c0c0c0; width: 36rem; height: 28rem;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    1px 1px 0px 0px #c1c1c1 inset, -1px -1px 0px 0px #000 inset;
+  padding: 0.25rem;
+}
+.titlebar {
+  display: flex; height: 1.5rem; padding: 0 0.25rem 0 0.5rem;
+  justify-content: space-between; align-items: center;
+  background: #000080; cursor: grab; color: white;
+  font-weight: bold; font-size: 0.9rem; margin-bottom: 1px;
+  &:active { cursor: grabbing; }
+}
+.titleLeft { display: flex; align-items: center; gap: 0.4rem; flex: 1; overflow: hidden; white-space: nowrap; }
+.buttons { display: flex; gap: 0.1rem; }
+.btn {
+  border: none; width: 1.1rem; height: 1rem; display: flex;
+  align-items: center; justify-content: center;
+  background: #c0c0c0; cursor: pointer;
+  box-shadow: 2px 2px 0px 0px #dfdfdf inset, -2px -2px 0px 0px #7f7f7f inset;
+  &:active { box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset; }
+}
+.btnIcon { width: 0.8rem; height: 0.7rem; }
+
+/* Menu */
+.menubar {
+  display: flex; background: #c0c0c0;
+  border-bottom: 1px solid #808080; padding: 0 4px;
+  font-size: 0.75rem;
+}
+.menuGroup { position: relative; }
+.menuItem {
+  display: block; padding: 2px 8px; cursor: pointer;
+  &:hover { background: #000080; color: white; }
+}
+.dropdown {
+  position: absolute; top: 100%; left: 0;
+  background: #c0c0c0; z-index: 999; min-width: 8rem;
+  box-shadow: 2px 2px 0px 0px #fff inset, -2px -2px 0px 0px #818181 inset,
+    -1px -1px 0px 0px #000 inset;
+}
+.dropItem {
+  padding: 3px 16px; font-size: 0.75rem; cursor: pointer;
+  &:hover { background: #000080; color: white; }
+}
+.dropDivider { height: 1px; background: #808080; margin: 2px 0; }
+
+/* Editor */
+.editor {
+  flex: 1; resize: none; border: none; outline: none;
+  font-family: "Courier New", monospace; font-size: 0.85rem;
+  line-height: 1.5; padding: 6px 8px;
+  background: white; color: #000;
+  box-shadow: 2px 2px 0px 0px #000 inset, -2px -2px 0px 0px #c1c1c1 inset;
+  overflow-y: auto;
+}
+
+/* Status */
+.statusbar {
+  display: flex; gap: 1rem; justify-content: flex-end;
+  padding: 2px 8px; font-size: 0.7rem;
+  border-top: 1px solid #808080;
+}

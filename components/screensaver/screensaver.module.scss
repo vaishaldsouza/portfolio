@@ -1,0 +1,33 @@
+.screen {
+  position: fixed; top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #000; z-index: 9000;
+  cursor: none; overflow: hidden;
+}
+.hint {
+  position: absolute; bottom: 1rem; width: 100%;
+  text-align: center; color: #333;
+  font-size: 0.75rem; font-family: monospace;
+  animation: fadeInOut 3s infinite;
+}
+@keyframes fadeInOut {
+  0%,100%{opacity:0} 50%{opacity:1}
+}
+.logo {
+  position: absolute; display: flex;
+  align-items: center; gap: 0.5rem;
+  transition: color 0.3s;
+  user-select: none;
+}
+.logoFlag {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 2px; width: 2rem; height: 2rem; flex-shrink: 0;
+}
+.flagRed    { background: #f25022; border-radius: 1px; }
+.flagGreen  { background: #7fba00; border-radius: 1px; }
+.flagBlue   { background: #00a4ef; border-radius: 1px; }
+.flagYellow { background: #ffb900; border-radius: 1px; }
+
+.logoText { display: flex; flex-direction: column; line-height: 1; }
+.win { font-size: 0.85rem; font-weight: bold; color: inherit; letter-spacing: 1px; }
+.n95 { font-size: 1.8rem; font-weight: 900; color: inherit; line-height: 1; }
