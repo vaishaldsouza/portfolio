@@ -1,5 +1,6 @@
 # 🖥️ Vaishal Dsouza — Windows 95 Portfolio
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?logo=vercel)](https://portfolio-chi-hazel-65.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
@@ -125,15 +126,6 @@ public/
 - **Change certifications** → Edit `app/markdown/aboutMe.mdx`
 - **Add memes** → Drop `.jpeg` files into `public/memes/`
 - **Change title** → Edit `app/layout.js` metadata
-
----
-
-## 👨‍💻 Author
-
-**Vaishal Dsouza**
-- 📧 vaishaldsouza@email.com
-- 🐙 [github.com/vaishaldsouza](https://github.com/vaishaldsouza)
-- 🎓 B.E. CSE — St Joseph Engineering College (2023-2027)
 
 ---
 
