@@ -1,4 +1,4 @@
-# 🖥️ Vaishal Dsouza — Portfolio
+# Portfolio
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?logo=vercel)](https://portfolio-chi-hazel-65.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org)
