@@ -35,12 +35,12 @@ const Login = ({ onLogin }) => {
   };
 
   const handleLogin = () => {
-    if (password.toLowerCase() === "meow" || password === "admin") {
+    if (password === "143" || password === "admin") {
       playStartupSound();
       setTimeout(() => onLogin(), 300);
     } else {
       setShake(true);
-      setHint("Hint: password is \"meow\" 😄");
+      setHint("Hint: password is \"143\" 😄");
       setTimeout(() => setShake(false), 600);
     }
   };
@@ -79,7 +79,7 @@ const Login = ({ onLogin }) => {
               onChange={(e) => setPassword(e.target.value)}
               onKeyDown={handleKeyDown}
               autoFocus
-              placeholder="(type meow)"
+              placeholder="(type 143)"
             />
           </div>
           {hint && <div className={styles.hint}>{hint}</div>}
