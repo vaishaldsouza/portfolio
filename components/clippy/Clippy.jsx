@@ -11,8 +11,8 @@ const TIPS = [
   "You can play Chess against the CPU! ♟️",
   "Try MS Paint — draw something cool! 🎨",
   "Shut Down from the Start Menu for a spooky surprise 💀",
-  "Prajwal is available for hire! Check his Resume 👀",
-  "It looks like you're visiting a portfolio. Want me to help you hire Prajwal? 😂",
+  "Vaishal is available for hire! Check his Resume 👀",
+  "It looks like you're visiting a portfolio. Want me to help you hire Vaishal? 😂",
   "Pro tip: Stay idle for 30 seconds to see the screensaver!",
   "Try the Python IDE — run real Python in your browser! 🐍",
 ];

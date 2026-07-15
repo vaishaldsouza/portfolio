@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-# 🖥️ Prajwal A — Windows 95 Portfolio
+# 🖥️ Vaishal Dsouza — Windows 95 Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?logo=vercel)](https://prajwal-dev.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-A retro Windows 95-themed developer portfolio for **Prajwal A**, AI/ML Engineer.
+A retro Windows 95-themed developer portfolio for **Vaishal Dsouza**, CSE Student & Full-Stack Developer.
 
 ![Desktop Screenshot](public/screenshots/desktop.png)
 
@@ -29,7 +27,11 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+By default, the app runs on [http://localhost:3000](http://localhost:3000). To run it on a custom port (e.g., 3005), run:
+```bash
+npm run dev -- -p 3005
+```
+and open [http://localhost:3005](http://localhost:3005).
 
 ---
 
@@ -62,7 +64,7 @@ components/
   misc/             ← RickRoll, BlueScreen
 
 public/
-  Prajwal_A_Resume.pdf  ← Your resume
+  Vaishal_Dsouza_Resume.pdf  ← Your resume
   windowsIcons/         ← All Win95 icons
   memes/                ← Meme Vault images
   screenshots/          ← README screenshots
@@ -128,16 +130,13 @@ public/
 
 ## 👨‍💻 Author
 
-**Prajwal A**
-- 📧 prajwala27112005@gmail.com
-- 🐙 [github.com/Prajwal18py](https://github.com/Prajwal18py)
-- 🎓 B.Tech AI/ML — Alliance University (2024-2028)
+**Vaishal Dsouza**
+- 📧 vaishaldsouza@email.com
+- 🐙 [github.com/vaishaldsouza](https://github.com/vaishaldsouza)
+- 🎓 B.E. CSE — St Joseph Engineering College (2023-2027)
 
 ---
 
 ## 📄 License
 
 MIT License — feel free to use and modify!
-=======
-# prajwal-portfolio
->>>>>>> 74b614cc09f4d1340f3f3b0a8daf8671cfd0597a

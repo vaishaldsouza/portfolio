@@ -4,10 +4,10 @@ import Draggable from "react-draggable";
 import Image from "next/image";
 import styles from "./compiler.module.scss";
 
-const STARTER_CODE = `# Welcome to Prajwal's Python Compiler! 🐍
+const STARTER_CODE = `# Welcome to Vaishal's Python Compiler! 🐍
 # Powered by Pyodide — real Python in your browser!
 
-print("Hello from Prajwal's portfolio! 👋")
+print("Hello from Vaishal's portfolio! 👋")
 
 # Try some ML stuff:
 numbers = [1, 2, 3, 4, 5]
@@ -95,7 +95,7 @@ sys.stdout = io.StringIO()
           <div className={`${styles.titlebar} compilerHandle`}>
             <div className={styles.titleLeft}>
               <span>🐍</span>
-              <span>Python Compiler — Prajwal's Portfolio</span>
+              <span>Python Compiler — Vaishal's Portfolio</span>
             </div>
             <div className={styles.buttons}>
               <button className={styles.btn}>

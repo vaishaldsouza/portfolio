@@ -4,40 +4,35 @@ import Draggable from "react-draggable";
 import Image from "next/image";
 import styles from "./notepad.module.scss";
 
-const DEFAULT_TEXT = `Welcome to Prajwal's Notepad 📝
+const DEFAULT_TEXT = `Welcome to Vaishal's Notepad 📝
 ================================
 
-[Jan 2026]
-Started my B.Tech in AI/ML at Alliance University.
-Building cool stuff every day. This portfolio is proof.
+[Dec 2025 - Jan 2026]
+AI for Sustainability Virtual Internship at 1M1B.
+Worked on Agentic AI and RAG solutions for UN SDGs.
 
-[Dec 2025]
-Completed Deloitte Australia virtual internship.
-Learned a ton about EDA and real-world data pipelines.
-
-[Jan-Feb 2026]
-Microsoft Elevate × AICTE — 25hrs of Azure goodness.
-Cloud is the future and I'm here for it ☁️
+[Academic]
+Pursuing B.E. in Computer Science and Engineering
+at St Joseph Engineering College, Mangaluru (2023-2027).
 
 [Thoughts]
-- AI is not going to replace you.
-  A person using AI will.
-- Build things. Break things. Learn things.
-- Sleep is a myth during hackathons.
+- Keep coding, keep building! Full-stack dev is fun.
+- Strive for clean architecture and performant code.
+- Hackathons are great to test limits and team coordination.
 
 [Goals 2026]
-☐ Deploy 3 production ML models
-☐ Contribute to open source
-☐ Land a killer internship
-☐ Keep building insane stuff
+☐ Build production full-stack web applications
+☐ Learn cloud computing and serverless deployments
+☐ Learn advanced Generative AI & agent workflows
+☐ Contribute to open source projects
 
 ================================
-Made with 💻 and too much coffee.
+Made with 💻 and lots of passion.
 `;
 
 export default function Notepad({ setShowNotepad }) {
   const [text, setText] = useState(DEFAULT_TEXT);
-  const [fileName, setFileName] = useState("Prajwal's Thoughts.txt");
+  const [fileName, setFileName] = useState("Vaishal's Thoughts.txt");
   const [isModified, setIsModified] = useState(false);
   const [wordWrap, setWordWrap] = useState(true);
   const [showMenu, setShowMenu] = useState(null);

@@ -55,10 +55,10 @@ const StartMenu = ({ setShowStartMenu }) => {
   ];
 
   const searchIndex = [
-    { name: "About Me", keywords: ["about", "bio", "prajwal", "me", "who"], icon: "/windowsIcons/builder.png", id: "aboutMe" },
-    { name: "Projects", keywords: ["project", "work", "build", "dataforge", "code"], icon: "/windowsIcons/joystick.png", id: "projects" },
-    { name: "Experience", keywords: ["experience", "intern", "microsoft", "deloitte", "job"], icon: "/windowsIcons/documents.svg", id: "experience" },
-    { name: "Education", keywords: ["education", "college", "university", "alliance", "btech"], icon: "/windowsIcons/folder.svg", id: "education" },
+    { name: "About Me", keywords: ["about", "bio", "vaishal", "me", "who"], icon: "/windowsIcons/builder.png", id: "aboutMe" },
+    { name: "Projects", keywords: ["project", "work", "build", "screener", "recommendation"], icon: "/windowsIcons/joystick.png", id: "projects" },
+    { name: "Experience", keywords: ["experience", "intern", "ibm", "1m1b", "skillsbuild", "job"], icon: "/windowsIcons/documents.svg", id: "experience" },
+    { name: "Education", keywords: ["education", "college", "sjec", "mangaluru", "cse"], icon: "/windowsIcons/folder.svg", id: "education" },
     { name: "Contact", keywords: ["contact", "email", "mail", "reach", "talk", "connect"], icon: "/windowsIcons/chat.png", id: "mail" },
     { name: "Resume", keywords: ["resume", "cv", "download", "hire"], icon: "/windowsIcons/resume.png", id: "resume" },
     { name: "Chess", keywords: ["chess", "game", "play"], icon: "/windowsIcons/programs.png", id: "chess" },
@@ -73,12 +73,12 @@ const StartMenu = ({ setShowStartMenu }) => {
     "explorer": "📁 Try the desktop icons instead!",
     "chrome": "🌐 Chrome is too modern for Windows 95.",
     "hello": "👋 Hello, World!",
-    "hire prajwal": "✅ Excellent choice! Email: prajwala27112005@gmail.com",
-    "sudo hire prajwal": "✅✅ SUPER HIRED! Email: prajwala27112005@gmail.com",
-    "python": "🐍 Python 3.x is running... somewhere in Prajwal's brain.",
+    "hire vaishal": "✅ Excellent choice! Email: vaishaldsouza@email.com",
+    "sudo hire vaishal": "✅✅ SUPER HIRED! Email: vaishaldsouza@email.com",
+    "python": "🐍 Python 3.x is running... somewhere in Vaishal's brain.",
     "matrix": "🟩 Wake up, Neo...",
-    "help": "📖 Try: notepad, cmd, calc, python, matrix, hire prajwal",
-    "hack": "💚 Initializing hack sequence...\n> ACCESS GRANTED\n> Welcome, Prajwal.\n> All your base are belong to us. 😈",
+    "help": "📖 Try: notepad, cmd, calc, python, matrix, hire vaishal",
+    "hack": "💚 Initializing hack sequence...\n> ACCESS GRANTED\n> Welcome, Vaishal.\n> All your base are belong to us. 😈",
     "crash": "💀 Triggering BSOD...",
   };
 
@@ -264,7 +264,7 @@ const StartMenu = ({ setShowStartMenu }) => {
                   value={runInput}
                   onChange={e => setRunInput(e.target.value)}
                   onKeyDown={e => e.key === "Enter" && handleRun()}
-                  placeholder="try: hire prajwal"
+                  placeholder="try: hire vaishal"
                   autoFocus
                 />
               </div>
@@ -272,7 +272,7 @@ const StartMenu = ({ setShowStartMenu }) => {
               <div className={styles.dialog_footer}>
                 <button className={styles.dialog_btn} onClick={handleRun}>OK</button>
                 <button className={styles.dialog_btn} onClick={() => { setShowRun(false); setRunResult(null); setRunInput(""); }}>Cancel</button>
-                <button className={styles.dialog_btn} onClick={() => setRunInput("hire prajwal")}>Browse...</button>
+                <button className={styles.dialog_btn} onClick={() => setRunInput("hire vaishal")}>Browse...</button>
               </div>
             </div>
           </div>
@@ -295,19 +295,19 @@ const StartMenu = ({ setShowStartMenu }) => {
                 <div className={styles.help_item}><span className={styles.help_icon}>🖱️</span><div><strong>Drag Windows</strong> — Click and drag the title bar</div></div>
                 <div className={styles.help_item}><span className={styles.help_icon}>✕</span><div><strong>Close Windows</strong> — Click ✕ on any window</div></div>
                 <div className={styles.help_item}><span className={styles.help_icon}>🔍</span><div><strong>Find</strong> — Search anything in the portfolio</div></div>
-                <div className={styles.help_item}><span className={styles.help_icon}>⌨️</span><div><strong>Run</strong> — Type commands like <em>hire prajwal</em></div></div>
+                <div className={styles.help_item}><span className={styles.help_icon}>⌨️</span><div><strong>Run</strong> — Type commands like <em>hire vaishal</em></div></div>
                 <hr className={styles.help_hr} />
                 <h3 className={styles.help_title}>📂 What's on the Desktop</h3>
                 <div className={styles.help_item}><span className={styles.help_icon}>👤</span><div><strong>About Me</strong> — Skills, certifications & bio</div></div>
-                <div className={styles.help_item}><span className={styles.help_icon}>🔬</span><div><strong>Projects</strong> — DataForge Studio & more</div></div>
-                <div className={styles.help_item}><span className={styles.help_icon}>💼</span><div><strong>Experience</strong> — Microsoft & Deloitte internships</div></div>
-                <div className={styles.help_item}><span className={styles.help_icon}>🎓</span><div><strong>Education</strong> — Alliance University</div></div>
+                <div className={styles.help_item}><span className={styles.help_icon}>🔬</span><div><strong>Projects</strong> — Resume Screener & more</div></div>
+                <div className={styles.help_item}><span className={styles.help_icon}>💼</span><div><strong>Experience</strong> — IBM SkillsBuild internship</div></div>
+                <div className={styles.help_item}><span className={styles.help_icon}>🎓</span><div><strong>Education</strong> — SJEC Mangaluru</div></div>
                 <div className={styles.help_item}><span className={styles.help_icon}>✉️</span><div><strong>Talk to Me</strong> — Send a message</div></div>
-                <div className={styles.help_item}><span className={styles.help_icon}>📄</span><div><strong>Download Résumé</strong> — Get Prajwal's CV</div></div>
+                <div className={styles.help_item}><span className={styles.help_icon}>📄</span><div><strong>Download Résumé</strong> — Get Vaishal's CV</div></div>
                 <div className={styles.help_item}><span className={styles.help_icon}>♟️</span><div><strong>Chess</strong> — Play chess vs CPU</div></div>
                 <div className={styles.help_item}><span className={styles.help_icon}>🗿</span><div><strong>Meme Vault</strong> — You know why</div></div>
                 <hr className={styles.help_hr} />
-                <p className={styles.help_contact}>📧 <strong>prajwala27112005@gmail.com</strong></p>
+                <p className={styles.help_contact}>📧 <strong>vaishaldsouza@email.com</strong></p>
               </div>
               <div className={styles.dialog_footer}>
                 <button className={styles.dialog_btn} onClick={() => setShowHelp(false)}>OK</button>

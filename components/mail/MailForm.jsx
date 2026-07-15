@@ -21,7 +21,7 @@ const Prompt = ({ status, errorMessage }) => {
             <Image src="/windowsIcons/msg_success.png" alt="success" className={styles.promptImg} height={40} width={40} />
             <h3>Message delivered! 🎉</h3>
           </div>
-          <p className={styles.successCode}>Prajwal will get back to you soon. Connect on LinkedIn too!</p>
+          <p className={styles.successCode}>Vaishal will get back to you soon. Connect on LinkedIn too!</p>
         </div>
       ) : (
         <div>
@@ -39,7 +39,7 @@ const Prompt = ({ status, errorMessage }) => {
 const MailForm = () => {
   const [showPrompt, setShowPrompt] = useState(false);
   const [status, setStatus] = useState();
-  const [errorMessage, setErrorMessage] = useState("Something went wrong. Try emailing directly: prajwala27112005@gmail.com");
+  const [errorMessage, setErrorMessage] = useState("Something went wrong. Try emailing directly: vaishaldsouza@email.com");
   const form = useRef();
 
   const handleSend = (e) => {
@@ -77,7 +77,7 @@ const MailForm = () => {
         </div>
         <div className={styles.formElement}>
           <label htmlFor="to">To</label>
-          <input type="email" id="to" className={styles.to} placeholder="prajwala27112005@gmail.com" disabled />
+          <input type="email" id="to" className={styles.to} placeholder="vaishaldsouza@email.com" disabled />
         </div>
         <div className={styles.formElement}>
           <label htmlFor="subject"></label>

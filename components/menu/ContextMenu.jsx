@@ -13,7 +13,7 @@ const ContextMenu = ({ contextMenuPosition }) => {
         alert("📁 New Folder created! (Just kidding, this is a portfolio 😄)");
         break;
       case "properties":
-        alert("🖥️ Prajwal's Portfolio\nVersion: Windows 95 Edition\nBuilt with: Next.js + Love ❤️\nDeveloper: Prajwal A\nEmail: prajwala27112005@gmail.com");
+        alert("🖥️ Vaishal's Portfolio\nVersion: Windows 95 Edition\nBuilt with: Next.js + Love ❤️\nDeveloper: Vaishal Dsouza\nEmail: vaishaldsouza@email.com");
         break;
       case "paste":
         alert("📋 Nothing to paste! Try copying something first 😄");

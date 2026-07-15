@@ -35,7 +35,7 @@ const Login = ({ onLogin }) => {
   };
 
   const handleLogin = () => {
-    if (password === "" || password.toLowerCase() === "prajwal" || password === "admin") {
+    if (password === "" || password.toLowerCase() === "vaishal" || password === "admin") {
       playStartupSound();
       setTimeout(() => onLogin(), 300);
     } else {
@@ -68,7 +68,7 @@ const Login = ({ onLogin }) => {
           </div>
           <div className={styles.formRow}>
             <label className={styles.label}>User name:</label>
-            <input className={styles.input} type="text" defaultValue="Prajwal" readOnly />
+            <input className={styles.input} type="text" defaultValue="Vaishal" readOnly />
           </div>
           <div className={styles.formRow}>
             <label className={styles.label}>Password:</label>

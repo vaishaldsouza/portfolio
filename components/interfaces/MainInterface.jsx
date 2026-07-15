@@ -13,7 +13,7 @@ import Mail from "../mail/Mail";
 import MusicPlayer from "../music/MusicPlayer";
 import FileManager from "../fileManager/FileManager";
 import Chess from "../chess/Chess";
-import ResumePDF from "../../public/Prajwal_A_Resume.pdf";
+import ResumePDF from "../../public/Vaishal_Dsouza_Resume.pdf";
 import Notepad from "../notepad/Notepad";
 
 const MainInterface = () => {
@@ -33,7 +33,7 @@ const MainInterface = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
     link.href = ResumePDF;
-    link.download = "Prajwal_A_Resume.pdf";
+    link.download = "Vaishal_Dsouza_Resume.pdf";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     document.body.appendChild(link);

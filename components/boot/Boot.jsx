@@ -13,7 +13,7 @@ const BOOT_LINES = [
   "Initializing Plug and Play devices...",
   "Loading network components...",
   "Checking disk integrity...",
-  "Loading user profile for PRAJWAL...",
+  "Loading user profile for VAISHAL...",
   "Starting graphical interface...",
 ];
 
@@ -72,7 +72,7 @@ export default function Boot({ onDone }) {
             />
           </div>
           <div className={styles.progressContainer}>
-            <div className={styles.progressLabel}>Loading Prajwal's Portfolio...</div>
+            <div className={styles.progressLabel}>Loading Vaishal's Portfolio...</div>
             <div className={styles.progressBar}>
               <div className={styles.progressFill} style={{width: `${barWidth}%`}}/>
             </div>
